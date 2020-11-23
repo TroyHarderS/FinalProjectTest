@@ -26,7 +26,6 @@ public class OrderTest {
 
 
         common.startPage("https://www.1a.lv/");
-        homePage.validate1aString("https://www.1a.lv/");
 
         homePage.findStation();
 
