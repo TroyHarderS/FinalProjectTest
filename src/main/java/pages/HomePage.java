@@ -9,7 +9,7 @@ public class HomePage extends Common {
 
     private By searchBarElement = By.id("q");
     private By searchButtonElement = By.xpath("//button[@class='main-search-submit ']");
-    private By validate1aLink = By.xpath("//a[@herf='https://www.1a.lv/']");
+    private By validate1aLink = By.id("c-left");
 
     public void findStation() {
         ProductModel model = new ProductModel();
@@ -18,9 +18,9 @@ public class HomePage extends Common {
 
     }
 
-    public void validate1aString (String url) {
-        String messageText = driver.findElement(validate1aLink).getText();
-        assertThat(messageText).isEqualTo(url);
+    public void validate1aString (String text) {
+        String messageText = driver.findElements(validate1aLink).get(1).getText();
+        assertThat(messageText).isEqualTo(text);
     }
 
 

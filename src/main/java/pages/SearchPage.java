@@ -36,7 +36,7 @@ public class SearchPage extends Common {
             e.printStackTrace();
 
         }
-        driver.findElements(brandSonyElement).get(3).click();
+        driver.findElements(brandSonyElement).get(4).click();
 
         try {
             Thread.sleep(3000);

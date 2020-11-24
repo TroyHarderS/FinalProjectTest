@@ -27,6 +27,15 @@ public class OrderTest {
 
         common.startPage("https://www.1a.lv/");
 
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //homePage.validate1aString("Ir četri galvenie sīkfailu veidi, kuriem mēs sekojam 1a.lv vietnē.");
+
         homePage.findStation();
 
         try {
@@ -38,13 +47,19 @@ public class OrderTest {
         common.scrollDown();
         searchPage.findExpensivePS4();
         playStationPage.addToCart();
+        playStationPage.switchFrame();
 
         }
 
     @After
     public void reportReady() {
+        Common common = new Common();
+        common.stopDriver();
         System.out.println("Well Done!");
     }
+
+
+
 
 }
 
