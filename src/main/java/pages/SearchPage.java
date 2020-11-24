@@ -44,15 +44,9 @@ public class SearchPage extends Common {
             e.printStackTrace();
         }
 
-            driver.findElement(bestDeal).click();
+        driver.findElement(bestDeal).click();
 
-            // public void chooseTopElement() {
-            //  driver.findElements(bestDealElement).get(11).click();
-        }
-
-        //  public void choosePS4() {
-        //     driver.findElement(bestDeal).click();
-        //  }
     }
+}
 
 

@@ -2,7 +2,6 @@ package models;
 
 public class CustomerModel {
 
-
     private String email = "kekis100500@gmail.com";
     private String password = "EasyPassword12";
     private String phoneNumber = "54687931";

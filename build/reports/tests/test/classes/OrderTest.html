@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">31.823s</div>
+<div class="counter">19.059s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,13 +79,13 @@
 <a name="OrderPS4Test"></a>
 <h3 class="failures">OrderPS4Test</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchFrameException: no such frame: element is not a frame
+<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (461, 1673)
   (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-JUQ5HR2', ip: '192.168.11.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\andre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 15fc21c0402ac7b1d96ddf81a8333ea0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\andre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0e50b23442ad4a4148f033b02ee7e79f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,10 +97,10 @@ Session ID: 15fc21c0402ac7b1d96ddf81a8333ea0
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:892)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:887)
-	at pages.PlayStation4Page.switchFrame(PlayStation4Page.java:15)
-	at OrderTest.OrderPS4Test(OrderTest.java:50)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.SearchPage.findExpensivePS4(SearchPage.java:24)
+	at OrderTest.OrderPS4Test(OrderTest.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,7 +166,7 @@ Session ID: 15fc21c0402ac7b1d96ddf81a8333ea0
 </thead>
 <tr>
 <td class="failures">OrderPS4Test</td>
-<td class="failures">31.823s</td>
+<td class="failures">19.059s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -182,12 +182,12 @@ Well Done!
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 1211
+<pre>Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 15809
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1606227184.910][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
-нояб. 24, 2020 4:13:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1606228590.594][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
+нояб. 24, 2020 4:36:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -200,7 +200,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 24 нояб. 2020 г., 16:13:35</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 24 нояб. 2020 г., 16:36:48</p>
 </div>
 </div>
 </body>
