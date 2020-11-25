@@ -1,6 +1,6 @@
 package models;
 
-public class ProductModel {
+public class OrderModel {
 
     private String name = "Sony Playstation 4 (PS4) Slim 500GB Black";
     private String type = "Ps";

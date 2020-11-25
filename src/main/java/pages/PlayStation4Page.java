@@ -1,7 +1,7 @@
 package pages;
 
 import Helper.Common;
-import models.ProductModel;
+import models.OrderModel;
 import org.openqa.selenium.By;
 import static org.assertj.core.api.Assertions.assertThat;
 import static pages.SharedContext.productNameOn1a;
@@ -22,10 +22,10 @@ public class PlayStation4Page extends Common {
     }
 
     public PlayStation4Page validateItemName() {
-        ProductModel productModel = new ProductModel();
-        System.out.println("Full name of the product: " + productModel.getName());
+        OrderModel orderModel = new OrderModel();
+        System.out.println("Full name of the product: " + orderModel.getName());
         System.out.println("Full name on 1a: " + productNameOn1a);
-        assertThat(productModel.getName()).isEqualTo(productNameOn1a);
+        assertThat(orderModel.getName()).isEqualTo(productNameOn1a);
         return this;
     }
 
