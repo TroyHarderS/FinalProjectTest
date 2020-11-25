@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">19.059s</div>
+<div class="counter">1m19.48s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,13 +79,15 @@
 <a name="OrderPS4Test"></a>
 <h3 class="failures">OrderPS4Test</h3>
 <span class="code">
-<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (461, 1673)
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class='main-button cart-main-button']&quot;}
   (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-JUQ5HR2', ip: '192.168.11.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\andre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0e50b23442ad4a4148f033b02ee7e79f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\andre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b40d82c5f8dc4dfe2ad8f69544ea0df0
+*** Element info: {Using=xpath, value=//input[@class='main-button cart-main-button']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,10 +99,12 @@ Session ID: 0e50b23442ad4a4148f033b02ee7e79f
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.SearchPage.findExpensivePS4(SearchPage.java:24)
-	at OrderTest.OrderPS4Test(OrderTest.java:48)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.CartPage.pressContinue(CartPage.java:20)
+	at OrderTest.OrderPS4Test(OrderTest.java:97)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,7 +170,7 @@ Session ID: 0e50b23442ad4a4148f033b02ee7e79f
 </thead>
 <tr>
 <td class="failures">OrderPS4Test</td>
-<td class="failures">19.059s</td>
+<td class="failures">1m19.48s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -182,12 +186,12 @@ Well Done!
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 15809
+<pre>Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 18497
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1606228590.594][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
-нояб. 24, 2020 4:36:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1606299195.215][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
+нояб. 25, 2020 12:13:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -200,7 +204,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 24 нояб. 2020 г., 16:36:48</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 25 нояб. 2020 г., 12:15:09</p>
 </div>
 </div>
 </body>

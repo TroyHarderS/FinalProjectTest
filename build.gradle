@@ -22,5 +22,5 @@ dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
-
+    compileJava.options.encoding = 'UTF-8'
 }
