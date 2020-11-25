@@ -2,45 +2,9 @@ package models;
 
 public class ProductModel {
 
-    private String name = "Sony PlayStation 4";
+    private String name = "Sony Playstation 4 (PS4) Slim 500GB Black";
     private String type = "Ps";
-    private String brand = "Sony";
-    public String startPrice = "";
-    public String finalPrice = "";
-    public String productName = "";
-    public String finalName = "";
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public String getFinalName() {
-        return finalName;
-    }
-
-    public void setFinalName(String finalName) {
-        this.finalName = finalName;
-    }
-
-    public String getFinalPrice() {
-        return finalPrice;
-    }
-
-    public void setFinalPrice(String finalPrice) {
-        this.finalPrice = finalPrice;
-    }
-
-    public String getStartPrice() {
-        return startPrice;
-    }
-
-    public void setStartPrice(String startPrice) {
-        this.startPrice = startPrice;
-    }
+    private String shop = "1a.lv - interneta veikals";
 
     public String getName() {
         return name;
@@ -50,9 +14,8 @@ public class ProductModel {
         return type;
     }
 
-    public String getBrand() {
-        return brand;
-    }
+    public String getShop() { return shop; }
+
 
 
 }

@@ -5,13 +5,11 @@ import models.*;
 
 public class SearchPage extends Common {
     private By brandSonyElement = By.xpath("//a[@class='filter-link']");
-
     private By bestDeal = By.xpath("//div[@class='new-product-item catalog-taxons-product']");
 
 
     public void findExpensivePS4() {
         Common common = new Common();
-
 
         try {
             Thread.sleep(3000);

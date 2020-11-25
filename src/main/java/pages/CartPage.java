@@ -1,9 +1,6 @@
 package pages;
 import Helper.Common;
-import models.CustomerModel;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CartPage extends Common {
 
