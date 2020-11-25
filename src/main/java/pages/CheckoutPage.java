@@ -40,11 +40,10 @@ public class CheckoutPage extends Common {
             e.printStackTrace();
         }
 
-        driver.findElements(chooseLucavsala).get(4).click();
         driver.findElement(nameBarElement).sendKeys(customerModel.getName());
         driver.findElement(lastNameBarElement).sendKeys(customerModel.getLastName());
         driver.findElement(phoneNumberBarElement).sendKeys(customerModel.getPhoneNumber());
-
+        driver.findElements(chooseLucavsala).get(4).click();
         saveFinalPrice();
         checkIfFinalPriceIsEqualToStartPrice();
     }

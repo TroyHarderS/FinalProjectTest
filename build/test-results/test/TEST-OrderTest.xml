@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-25T16:39:28" hostname="DESKTOP-JUQ5HR2" time="48.34">
+<testsuite name="OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-25T16:52:59" hostname="DESKTOP-JUQ5HR2" time="48.48">
   <properties/>
-  <testcase name="OrderPS4Test" classname="OrderTest" time="48.34"/>
+  <testcase name="OrderPS4Test" classname="OrderTest" time="48.48"/>
   <system-out><![CDATA[Its Shopping Time!
 YEP, its 1a.lv!  
 Full name of the product: Sony Playstation 4 (PS4) Slim 500GB Black
@@ -10,12 +10,12 @@ Start price: 309,00 €
 Final price: 309,00 €
 Well Done!
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 10485
+  <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 21150
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1606322370.026][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
-нояб. 25, 2020 6:39:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1606323181.065][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
+нояб. 25, 2020 6:53:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
