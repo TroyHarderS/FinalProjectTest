@@ -1,5 +1,5 @@
 
-import Helper.Common;
+import helper.Common;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,6 +22,7 @@ public class OrderTest {
         CheckoutPage checkoutPage = new CheckoutPage();
         CartPage cartPage = new CartPage();
         LoginPage loginPage = new LoginPage();
+        PaymentPage paymentPage = new PaymentPage();
 
 
         common.startPage("https://www.1a.lv/");
@@ -39,6 +40,7 @@ public class OrderTest {
         cartPage.pressContinue();
         loginPage.loginWithEmail();
         checkoutPage.fillCustomerForm();
+        paymentPage.fillPaymentForm();
 
 
         try {

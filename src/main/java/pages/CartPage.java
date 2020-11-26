@@ -1,5 +1,5 @@
 package pages;
-import Helper.Common;
+import helper.Common;
 import org.openqa.selenium.By;
 
 public class CartPage extends Common {

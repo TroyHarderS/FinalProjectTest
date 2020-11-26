@@ -1,6 +1,7 @@
 package pages;
 
-import Helper.Common;
+import static org.assertj.core.api.Assertions.assertThat;
+import helper.Common;
 import org.openqa.selenium.By;
 import models.*;
 
@@ -20,9 +21,8 @@ public class HomePage extends Common {
     public void validateShop() {
         String urlNow = driver.getCurrentUrl();
         OrderModel orderModel = new OrderModel();
-        if (urlNow == orderModel.getShop()) ;
+        assertThat(urlNow).isEqualTo(orderModel.getShop());
         System.out.println("YEP, its 1a.lv!  ");
-
         }
     }
 

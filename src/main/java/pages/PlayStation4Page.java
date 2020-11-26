@@ -1,6 +1,6 @@
 package pages;
 
-import Helper.Common;
+import helper.Common;
 import models.OrderModel;
 import org.openqa.selenium.By;
 import static org.assertj.core.api.Assertions.assertThat;

@@ -1,6 +1,6 @@
 package pages;
 
-import Helper.Common;
+import helper.Common;
 import models.CustomerModel;
 import org.openqa.selenium.By;
 

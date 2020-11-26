@@ -1,7 +1,6 @@
 package pages;
-import Helper.Common;
+import helper.Common;
 import org.openqa.selenium.By;
-import models.*;
 
 public class SearchPage extends Common {
     private By brandSonyElement = By.xpath("//a[@class='filter-link']");
